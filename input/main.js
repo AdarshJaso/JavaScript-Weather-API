@@ -5,7 +5,7 @@ btn.addEventListener("click", function(){
 	var city = document.getElementById("cityinput").value;
 
 	var myRequest = new XMLHttpRequest();
-	myRequest.open('GET', "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&APPID=220a14ce06da0b6e1ec72fc14d0e59e0");
+	myRequest.open('GET', "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&APPID=220a14ce06da0b6e1ec72fc14d0e59e0");
 	myRequest.onload = function() {
 
 		if (myRequest.status >= 200 && myRequest.status < 400) {
