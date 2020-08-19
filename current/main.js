@@ -10,7 +10,7 @@ function showPosition() {
 			var lati = position.coords.latitude;
 			var longi = position.coords.longitude;
 			var myRequest = new XMLHttpRequest();
-			myRequest.open('GET', "http://api.openweathermap.org/data/2.5/weather?lat=" + lati + "&lon=" + longi + "&units=metric&APPID=220a14ce06da0b6e1ec72fc14d0e59e0");
+			myRequest.open('GET', "https://api.openweathermap.org/data/2.5/weather?lat=" + lati + "&lon=" + longi + "&units=metric&APPID=220a14ce06da0b6e1ec72fc14d0e59e0");
 			myRequest.onload = function() {
 
 				if (myRequest.status >= 200 && myRequest.status < 400) {
