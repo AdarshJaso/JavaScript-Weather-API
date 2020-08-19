@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Mulish', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+nav {
+	background-color: #b2ebf2;
+	width: 100%;
+	padding: 15px 0;
+	text-align: end;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	box-shadow: 0 .1rem 0.6rem rgba(0, 0, 0, .15)!important;
+}
+
+nav a {
+	padding: 15px 15px;
+}
+
+nav a.active {
+	background-color: #46ddf0;
+	color: white;
+	padding: 15px
+}
+
+ul {
+	display: inline-flex;
+	list-style: none;
+}
+
+li {}
+
+h2 {
+	text-align: center;
+	padding: 35px 0 20px 0;
+	margin-top: 50px;
+}
+
+#xyz {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.card {
+	box-shadow: 1px 1px 10px #c5ebf082;
+	background-color: #b2ebf2;
+	min-height: 200px;
+	min-width: 250px;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.card div {
+	margin-bottom: 5px;
+}
+
+
+/* INPUT */
+
+.inputblock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inputblock input {
+	height: 35px;
+	margin-right: 15px;
+	border-radius: 5px;
+	border: 1px solid #eee;
+	padding-left: 10px;
+}
+
+.inputblock button {
+	height: 40px;
+	width: 100px;
+	background-color: #c5ebf082;
+	border: 0;
+	border-radius: 5px;
+}
+
+.inputblock input:focus,
+.inputblock button:focus {
+	outline: 0 !important;
+}
+
+@media only screen and (max-width: 600px) {
+	.card {
+		min-width: 300px !important;
+	}
+	nav {
+		text-align: center;
+	}
+	ul li span {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.card {
+		min-width: 250px !important;
+	}
+	nav {
+		text-align: center;
+	}
+	ul li span {
+		display: none;
+	}
+}
